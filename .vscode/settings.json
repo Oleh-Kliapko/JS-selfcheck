@@ -1,0 +1,32 @@
+{
+  "cSpell.words": [
+    "anymatch",
+    "arrayish",
+    "boolbase",
+    "callsites",
+    "caniuse",
+    "csso",
+    "domelementtype",
+    "domhandler",
+    "domutils",
+    "extglob",
+    "fastq",
+    "fclone",
+    "htmlnano",
+    "Kliapko",
+    "libc",
+    "lightningcss",
+    "lmdb",
+    "msgpackr",
+    "nullthrows",
+    "Oleh",
+    "picocolors",
+    "picomatch",
+    "readdirp",
+    "reusify",
+    "selfcheck",
+    "simplelightbox",
+    "timsort",
+    "xxhash"
+  ]
+}
