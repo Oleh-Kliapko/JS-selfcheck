@@ -379,3 +379,69 @@
 // console.log(mango.blacklistedEmails); // ["poly@mail.com"]
 // console.log(mango.isBlacklisted("mango@mail.com")); // false
 // console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+// const user = {
+//   name: "John",
+//   age: 20,
+//   hobby: "tenis",
+//   premium: true,
+// };
+
+// for (const key of Object.keys(user)) {
+//   console.log(`${key}:${user[key]}`);
+// }
+
+// const salaries = {
+//   Mango: 100,
+//   Poly: 160,
+//   Ajax: 1470,
+// };
+
+// const sumSalaries = (salaries) =>
+//   Object.values(salaries).reduce((sum, salary) => {
+//     return sum + salary;
+//   }, 0);
+
+// console.log("🚀 ~ sumSalaries", sumSalaries(salaries));
+
+//Создайте объект calculator с тремя методами
+//read(a, b) - принимает два аргумента и сохраняет их
+//как свойства объекта
+//sum() возвращает сумму сохраненных значений
+//mult() перемножает сохраненные значения и возвращает результат
+
+// const calculator = {
+//   read(a, b) {
+//     this.x = a;
+//     this.y = b;
+//   },
+
+//   sum() {
+//     return this.x + this.y;
+//   },
+
+//   mult() {
+//     return this.x * this.y;
+//   },
+// };
+
+// calculator.read(10, 15);
+// calculator.sum();
+// console.log("🚀 ~ calculator.sum", calculator.sum());
+// calculator.mult();
+// console.log("🚀 ~ calculator.mult", calculator.mult());
+
+//Напишите функцию updateObject, которая принимает объект и возвращает
+//новый объект без указанных параметров
+//Ожидаемый результат ({a: 1, b: 2, c: 3}, 'b', 'a') => {c: 3}
+
+const updateObject = (obj, ...removeKeys) => {
+  const newObj = { ...obj };
+
+  for (const key of removeKeys) {
+    delete newObj[key];
+  }
+  return newObj;
+};
+
+console.log("🚀 ~ updateObject", updateObject({ a: 1, b: 2, c: 3 }, "b", "a"));
